@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link href="images/bg.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.13/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.2/dist/cdn.min.js" defer></script>
+
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    tertiary: '',
+                },
+                boxShadow: {
+                    middle: '0px 0px 40px 1px rgba(0, 0, 0, 0.25)',
+                },
+                keyframes: {
+                    fadeIn: {
+                        '0%': { opacity: 0 },
+                        '100%': { opacity: 1 },
+                    },
+                },
+                animation: {
+                    fadeIn: "fadeIn 2s forwards",
+                },
+            },
+        },
+    };
+    </script>
+
+</head>
+<body class="bg-gradient-to-b from-[#4E5CFF] to-[#2F3799] h-screen">
+    <main class="flex justify-center items-center sm:h-screen">
+        <div class="mt-20 sm:mt-0 space-y-10">
+            <div class="space-y-5">
+                <div class="relative flex justify-center">
+                    <img class="absolute bottom-0 w-24 h-24 rounded-full" src="imgs/logo.jpg">
+                    <img class="w-40 h-40 mx-auto" src="svgs/cicle.svg">
+                </div>
+                <h1 class="text-center text-white text-sm md:text-base font-bold uppercase">PT. BELANJA SOSMED</h1>
+            </div>
+            <div class="space-y-3 md:text-center">
+                <h1 class="text-white text-sm md:text-base font-bold capitalize">Pantau kehadiran tim Anda</h1>
+                <p class="text-white text-xs md:text-sm font-normal">Catat kehadiran tim Anda dengan mudah, tidak peduli <br> seberapa besar atau kecilnya jumlah mereka</p>
+            </div>
+            <a href="" class="flex justify-center bg-white py-2.5 md:py-2 px-3 md:w-[70%] mx-auto rounded-xl">
+                <h1 class="text-[#4E5CFF] text-xs md:text-sm font-bold capitalize">Masuk</h1>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
