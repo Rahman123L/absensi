@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="images/bg.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.13/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.2/dist/cdn.min.js" defer></script>
+
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    tertiary: '',
+                },
+                boxShadow: {
+                    middle: '0px 0px 40px 1px rgba(0, 0, 0, 0.25)',
+                },
+                keyframes: {
+                    fadeIn: {
+                        '0%': { opacity: 0 },
+                        '100%': { opacity: 1 },
+                    },
+                },
+                animation: {
+                    fadeIn: "fadeIn 2s forwards",
+                },
+            },
+        },
+    };
+    </script>
+
+</head>
+<body class="bg-[#F4F5FF]">
+    <main class="flex justify-center items-center sm:h-screen">
+        <div class="mt-28 sm:mt-0 bg-white shadow-lg space-y-5 p-5 m-5 rounded-xl">
+            <h1 class="text-center text-black text-xl md:text-2xl font-bold capitalize">Masuk</h1>
+            <form action="" method="" class="space-y-2">
+                <label class="flex items-center gap-3 border-[1.5px] border-[#DBDBDB] py-2.5 px-4 rounded-2xl">
+                    <img src="svgs/user.svg" class="w-4 md:w-5">
+                    <input type="text" placeholder="Nim" class="bg-transparent text-[#A4A4A4] text-sm md:text-base font-normal placeholder:text-[#A4A4A4] placeholder:text-sm md:placeholder:text-base placeholder:font-normal focus:outline-none focus:ring-0">
+                </label>
+                <label x-data="{ isOpen : false }" class="flex items-center gap-3 border-[1.5px] border-[#DBDBDB] py-2.5 px-4 rounded-2xl">
+                    <img src="svgs/clock.svg" class="w-4 md:w-5">
+                    <input :type="isOpen ? 'text' : 'password'" placeholder="Kata sandi" class="bg-transparent text-[#A4A4A4] text-sm md:text-base font-normal placeholder:text-[#A4A4A4] placeholder:text-sm md:placeholder:text-base placeholder:font-normal focus:outline-none focus:ring-0">
+                    <button type="button" @click="isOpen = !isOpen">
+                        <img src="svgs/eye.svg" x-show="!isOpen" class="w-4 md:w-5">
+                        <img src="svgs/eyee.svg" x-show="isOpen" class="w-4 md:w-5">
+                    </button>
+                </label>
+                <div class="flex items-center gap-2 p-2">
+                    <input type="checkbox" checked>
+                    <p class="text-[#121212] text-xs md:text-sm font-normal">Ingatkan saya</p>
+                </div>
+                <button class="w-full bg-[#4E5CFF] py-2.5 md:py-2 px-3 rounded-xl">
+                    <h1 class="text-white text-xs md:text-sm font-bold capitalize">Masuk</h1>
+                </button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
