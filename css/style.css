@@ -14,11 +14,6 @@
     display: none;
 }
 
-.scrollbar-y {
-    overflow-y: scroll;
-    height: 57rem;
-}
-
 .scrollbar-y::-webkit-scrollbar {
     display: none;
 }
