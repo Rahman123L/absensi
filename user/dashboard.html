@@ -135,7 +135,7 @@
             </div>
         </div>
 
-        <main :class="isOpenn ? 'md:ml-60' : 'md:ml-20 ' + 'transition-all duration-500'" class="relative md:ml-60 pt-24 py-5 px-5 md:px-8 pb-20 md:pb-0 space-y-3">
+        <main :class="isOpenn ? 'md:ml-60' : 'md:ml-20 ' + 'transition-all duration-500'" class="relative md:ml-60 pt-24 py-5 px-5 md:px-8 pb-20 space-y-3">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 bg-white p-5 rounded-lg shadow-sm shadow-black/20 overflow-hidden overflow-x-scroll md:overflow-x-auto scrollbar-x">
                 <div class="space-y-3">
                     <div class="flex justify-between items-center">
@@ -155,14 +155,14 @@
                     </div>
                     <table class="w-full border border-[#E6E6E6] text-center">
                         <thead>
-                            <tr class="text-black text-sm font-normal border-b border-[#E6E6E6]">
-                                <td class="p-2 border border-[#E6E6E6]">M</td>
-                                <td class="p-2 border border-[#E6E6E6]">S</td>
-                                <td class="p-2 border border-[#E6E6E6]">S</td>
-                                <td class="p-2 border border-[#E6E6E6]">R</td>
-                                <td class="p-2 border border-[#E6E6E6]">K</td>
-                                <td class="p-2 border border-[#E6E6E6]">J</td>
-                                <td class="p-2 border border-[#E6E6E6]">S</td>
+                            <tr class="border-b border-[#E6E6E6]">
+                                <td class="text-black text-sm font-normal p-2 border border-[#E6E6E6]">M</td>
+                                <td class="text-black text-sm font-normal p-2 border border-[#E6E6E6]">S</td>
+                                <td class="text-black text-sm font-normal p-2 border border-[#E6E6E6]">S</td>
+                                <td class="text-black text-sm font-normal p-2 border border-[#E6E6E6]">R</td>
+                                <td class="text-black text-sm font-normal p-2 border border-[#E6E6E6]">K</td>
+                                <td class="text-black text-sm font-normal p-2 border border-[#E6E6E6]">J</td>
+                                <td class="text-black text-sm font-normal p-2 border border-[#E6E6E6]">S</td>
                             </tr>
                         </thead>
                         <tbody class="calendar-dates"></tbody>
@@ -186,13 +186,230 @@
                         </div>
                     </div>
                 </div>
+                <div class="hidden md:block relative pr-5 md:pr-0">
+                    <div class="absolute top-4 -left-2 md:left-0 flex flex-col justify-center items-center gap-[45px] md:gap-[33px]">
+                        <div class="w-fit bg-[#4E5CFF] px-[6px] py-[7px] rounded-full">
+                            <svg class="w-2 stroke-white stroke-[1.5]" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 3.16992L2.75 5.16992L6.75707 1.16992"stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="w-16 md:w-14 border-[1.5px] border-[#4E5CFF] rotate-90"></div>
+                        <div class="w-fit bg-[#E6E6E6] px-[6px] py-[7px] rounded-full">
+                            <svg class="w-2 stroke-[#C4C4C4] stroke-[1.5]" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 3.16992L2.75 5.16992L6.75707 1.16992"stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="w-16 md:w-14 border-[1.5px] border-[#E6E6E6] rotate-90"></div>
+                        <div class="w-fit bg-[#E6E6E6] px-[6px] py-[7px] rounded-full">
+                            <svg class="w-2 stroke-[#C4C4C4] stroke-[1.5]" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 3.16992L2.75 5.16992L6.75707 1.16992"stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="w-16 md:w-14 border-[1.5px] border-[#E6E6E6] rotate-90"></div>
+                        <div class="w-fit bg-[#E6E6E6] px-[6px] py-[7px] rounded-full">
+                            <svg class="w-2 stroke-[#C4C4C4] stroke-[1.5]" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 3.16992L2.75 5.16992L6.75707 1.16992"stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ml-14 space-y-3 divide-y-[1.5px] divide-[#E6E6E6]">
+                        <div class="grid grid-cols-6 gap-3 pt-3">
+                            <div class="col-span-2 flex gap-2 p-1">
+                                <span><img src="/svgs/calender.svg" class="w-7 md:w-5"></span>
+                                <h1 class="text-black text-xs md:text-sm font-semibold">30 Des, 2024</h1>
+                            </div>
+                            <div class="col-span-2 p-1 space-y-1">
+                                <h1 class="text-black text-xs md:text-sm font-semibold">08:15</h1>
+                                <p class="text-[#838181] text-[10px] md:text-xs font-normal">Absensi masuk <br> tepat waktu</p>
+                            </div>
+                            <div class="col-span-2 p-1 space-y-1 border-l-[1.5px] border-[#E6E6E6] pl-5">
+                                <h1 class="text-black text-xs md:text-sm font-semibold">08:15</h1>
+                                <p class="text-[#838181] text-[10px] md:text-xs font-normal">Absensi keluar <br> tepat waktu</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-6 gap-3 pt-3">
+                            <div class="col-span-2 flex gap-2 p-1">
+                                <span><img src="/svgs/calender.svg" class="w-7 md:w-5"></span>
+                                <h1 class="text-black text-xs md:text-sm font-semibold">30 Des, 2024</h1>
+                            </div>
+                            <div class="col-span-2 p-1 space-y-1">
+                                <h1 class="text-black text-xs md:text-sm font-semibold">--:--</h1>
+                                <p class="text-[#838181] text-[10px] md:text-xs font-normal">Absensi masuk <br> belum dilakukan</p>
+                            </div>
+                            <div class="col-span-2 p-1 space-y-1 border-l-[1.5px] border-[#E6E6E6] pl-5">
+                                <h1 class="text-black text-xs md:text-sm font-semibold">--:--</h1>
+                                <p class="text-[#838181] text-[10px] md:text-xs font-normal">Absensi keluar <br> belum dilakukan</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-6 gap-3 pt-3">
+                            <div class="col-span-2 flex gap-2 p-1">
+                                <span><img src="/svgs/calender.svg" class="w-7 md:w-5"></span>
+                                <h1 class="text-black text-xs md:text-sm font-semibold">30 Des, 2024</h1>
+                            </div>
+                            <div class="col-span-2 p-1 space-y-1">
+                                <h1 class="text-black text-xs md:text-sm font-semibold">--:--</h1>
+                                <p class="text-[#838181] text-[10px] md:text-xs font-normal">Absensi masuk <br> belum dilakukan</p>
+                            </div>
+                            <div class="col-span-2 p-1 space-y-1 border-l-[1.5px] border-[#E6E6E6] pl-5">
+                                <h1 class="text-black text-xs md:text-sm font-semibold">--:--</h1>
+                                <p class="text-[#838181] text-[10px] md:text-xs font-normal">Absensi keluar <br> belum dilakukan</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-6 gap-3 pt-3">
+                            <div class="col-span-2 flex gap-2 p-1">
+                                <span><img src="/svgs/calender.svg" class="w-7 md:w-5"></span>
+                                <h1 class="text-black text-xs md:text-sm font-semibold">30 Des, 2024</h1>
+                            </div>
+                            <div class="col-span-2 p-1 space-y-1">
+                                <h1 class="text-black text-xs md:text-sm font-semibold">--:--</h1>
+                                <p class="text-[#838181] text-[10px] md:text-xs font-normal">Absensi masuk <br> belum dilakukan</p>
+                            </div>
+                            <div class="col-span-2 p-1 space-y-1 border-l-[1.5px] border-[#E6E6E6] pl-5">
+                                <h1 class="text-black text-xs md:text-sm font-semibold">--:--</h1>
+                                <p class="text-[#838181] text-[10px] md:text-xs font-normal">Absensi keluar <br> belum dilakukan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <button class="w-full md:w-[60%] lg:w-[30%] bg-[#4E5CFF] py-2 px-4 rounded-lg">
                 <h1 class="text-white text-xs md:text-sm font-normal">Absen</h1>
             </button>
+            <div class="pt-3 space-y-5">
+                <h1 class="text-black text-sm md:text-base font-semibold">Kegiatan</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="bg-white p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <img src="/imgs/avatar.jpg" class="w-8 h-8 rounded-full">
+                                <div>
+                                    <h1 class="text-black text-xs md:text-sm font-semibold">Rizky Rahman Rambe</h1>
+                                    <p class="text-[#838181] text-[10px] md:text-xs font-normal">4 Januari 2025</p>
+                                </div>
+                            </div>
+                            <img src="/svgs/menu.svg">
+                        </div>
+                        <p class="text-black text-xs md:text-sm font-normal">Hari ini saya melakukan hal yang belum saya lakukan</p>
+                        <div x-data="imageSlider()" x-init="autoScroll()" class="relative w-full max-w-lg mx-auto">
+                            <div class="overflow-hidden relative h-64 rounded-lg">
+                                <template x-for="(image, index) in images" :key="index">
+                                    <div
+                                        x-show="currentIndex === index"
+                                        class="absolute inset-0 transition-all duration-500 transform"
+                                        :class="currentIndex === index ? 'translate-x-0' : (currentIndex > index ? '-translate-x-full' : 'translate-x-full')"
+                                    >
+                                        <img :src="image" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                </template>
+                            </div>
+                    
+                            <button @click="currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1" class="absolute left-3 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full">
+                                <svg class="w-5 fill-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"/>
+                                </svg>
+                            </button>
+                    
+                            <button @click="currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0" class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full">
+                                <svg class="w-5 fill-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex justify-end items-center gap-3">
+                            <p class="text-[#838181] text-xs md:text-sm font-normal">Jam mulai 08:12</p>
+                            <p class="text-[#838181] text-xs md:text-sm font-normal">Jam selesai 17:45</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <img src="/imgs/avatar.jpg" class="w-8 h-8 rounded-full">
+                                <div>
+                                    <h1 class="text-black text-xs md:text-sm font-semibold">Rizky Rahman Rambe</h1>
+                                    <p class="text-[#838181] text-[10px] md:text-xs font-normal">4 Januari 2025</p>
+                                </div>
+                            </div>
+                            <img src="/svgs/menu.svg">
+                        </div>
+                        <p class="text-black text-xs md:text-sm font-normal">Hari ini saya melakukan hal yang belum saya lakukan</p>
+                        <div x-data="imageSlider()" x-init="autoScroll()" class="relative w-full max-w-lg mx-auto">
+                            <div class="overflow-hidden relative h-64 rounded-lg">
+                                <template x-for="(image, index) in images" :key="index">
+                                    <div
+                                        x-show="currentIndex === index"
+                                        class="absolute inset-0 transition-all duration-500 transform"
+                                        :class="currentIndex === index ? 'translate-x-0' : (currentIndex > index ? '-translate-x-full' : 'translate-x-full')"
+                                    >
+                                        <img :src="image" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                </template>
+                            </div>
+                    
+                            <button @click="currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1" class="absolute left-3 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full">
+                                <svg class="w-5 fill-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"/>
+                                </svg>
+                            </button>
+                    
+                            <button @click="currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0" class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full">
+                                <svg class="w-5 fill-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex justify-end items-center gap-3">
+                            <p class="text-[#838181] text-xs md:text-sm font-normal">Jam mulai 08:12</p>
+                            <p class="text-[#838181] text-xs md:text-sm font-normal">Jam selesai 17:45</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <img src="/imgs/avatar.jpg" class="w-8 h-8 rounded-full">
+                                <div>
+                                    <h1 class="text-black text-xs md:text-sm font-semibold">Rizky Rahman Rambe</h1>
+                                    <p class="text-[#838181] text-[10px] md:text-xs font-normal">4 Januari 2025</p>
+                                </div>
+                            </div>
+                            <img src="/svgs/menu.svg">
+                        </div>
+                        <p class="text-black text-xs md:text-sm font-normal">Hari ini saya melakukan hal yang belum saya lakukan</p>
+                        <div x-data="imageSlider()" x-init="autoScroll()" class="relative w-full max-w-lg mx-auto">
+                            <div class="overflow-hidden relative h-64 rounded-lg">
+                                <template x-for="(image, index) in images" :key="index">
+                                    <div
+                                        x-show="currentIndex === index"
+                                        class="absolute inset-0 transition-all duration-500 transform"
+                                        :class="currentIndex === index ? 'translate-x-0' : (currentIndex > index ? '-translate-x-full' : 'translate-x-full')"
+                                    >
+                                        <img :src="image" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                </template>
+                            </div>
+                    
+                            <button @click="currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1" class="absolute left-3 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full">
+                                <svg class="w-5 fill-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"/>
+                                </svg>
+                            </button>
+                    
+                            <button @click="currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0" class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full">
+                                <svg class="w-5 fill-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex justify-end items-center gap-3">
+                            <p class="text-[#838181] text-xs md:text-sm font-normal">Jam mulai 08:12</p>
+                            <p class="text-[#838181] text-xs md:text-sm font-normal">Jam selesai 17:45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 
     <script src="/js/script.js"></script>
+    <script src="/js/slinder.js"></script>
 </body>
 </html>
