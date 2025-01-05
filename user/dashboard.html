@@ -59,20 +59,22 @@
                     </button>
                     <div x-show="isOpen" @click.outside="isOpen = false" x-transition.duration.300ms.opacity.50 :class="{ 'block': isOpen, 'hidden': !isOpen }" class="hidden w-max absolute right-0">
                         <div class="grid divide-y-[1.5px] divide-[#ECEAEA] bg-white py-4 px-5 w-32 rounded md:rounded-md shadow-md shadow-black/20">
-                            <a href="editProfile.html">
+                            <a href="profile.html">
                                 <button class="flex items-center gap-2 md:gap-3 pb-2.5">
                                     <h1 class="text-[10px] md:text-xs text-black font-normal">Profile</h1>
                                 </button>
                             </a>
-                            <a href="editPassword.html">
+                            <a href="password.html">
                                 <button class="flex items-center gap-2 md:gap-3 py-2.5">
                                     <h1 class="text-[10px] md:text-xs text-black font-normal">Password</h1>
                                 </button>
                             </a>
-                            <button class="flex items-center gap-2 md:gap-3 pt-2.5">
-                                <h1 class="text-[10px] md:text-xs text-[#FF0000] font-normal">Logout</h1>
-                                <img src="/svgs/logout.svg" class="w-3 md:w-4">
-                            </button>
+                            <a href="/index.html">
+                                <button class="flex items-center gap-2 md:gap-3 pt-2.5">
+                                    <h1 class="text-[10px] md:text-xs text-[#FF0000] font-normal">Logout</h1>
+                                    <img src="/svgs/logout.svg" class="w-3 md:w-4">
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
