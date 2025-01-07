@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dahsboard</title>
+    <title>Activites</title>
     <link href="images/bg.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.13/dist/tailwind.min.css" rel="stylesheet">
@@ -154,10 +154,10 @@
 
             <!-- Aksi & Filter -->
             <div class="flex justify-between items-center">
-                <button class="fixed md:relative bottom-20 md:bottom-auto right-5 md:right-auto z-10 flex justify-between items-center md:w-[20%] bg-[#4E5CFF] py-2 px-4 gap-2 rounded-full md:rounded-lg shadow-sm shadow-black/20">
+                <a href="upload.html" class="fixed md:relative bottom-20 md:bottom-auto right-5 md:right-auto z-10 flex justify-between items-center md:w-[20%] bg-[#4E5CFF] py-2 px-4 gap-2 rounded-full md:rounded-lg shadow-sm shadow-black/20">
                     <h1 class="text-white text-xs md:text-sm font-semibold">Upload Kegiatan</h1>
                     <img src="/svgs/add.svg" class="w-4 md:w-5">
-                </button>
+                </a>
 
                 <div x-data="{ isOpen : false }" class="relative space-y-3">
                     <button @click="isOpen = !isOpen" class="flex justify-between items-center gap-2 w-36 bg-white py-2 px-4 rounded-lg shadow-sm shadow-black/20">
@@ -181,7 +181,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
                 <!-- Card -->
-                <div class="bg-white p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
+                <div class="bg-white h-fit p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center gap-3">
                             <img src="/imgs/avatar.jpg" class="w-8 h-8 rounded-full">
@@ -224,7 +224,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
+                <div class="bg-white h-fit p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center gap-3">
                             <img src="/imgs/avatar.jpg" class="w-8 h-8 rounded-full">
@@ -267,7 +267,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
+                <div class="bg-white h-fit p-5 rounded-lg space-y-3 shadow-sm shadow-black/20 overflow-hidden">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center gap-3">
                             <img src="/imgs/avatar.jpg" class="w-8 h-8 rounded-full">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password</title>
+    <title>Upload Kegiatan</title>
     <link href="images/bg.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.13/dist/tailwind.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
         <nav class="fixed top-0 z-40 w-full bg-[#F4F5FF] py-4 px-5 md:px-8">
             <div :class="isOpenn ? 'md:ml-60' : 'md:ml-20 ' + 'transition-all duration-500'" class="flex justify-between items-center md:ml-60 pb-3 border-b border-[#EBE9E9]">
                 <div>
-                    <h1 class="text-black text-lg md:text-xl font-bold">Password</h1>
+                    <h1 class="text-black text-lg md:text-xl font-bold">Upload Kegiatan</h1>
                     <p class="text-black text-[10px] md:text-xs font-normal">Hallo, Admin!</p>
                 </div>
 
@@ -150,52 +150,59 @@
         </div>
 
         <!-- Pembungkus Penyeluruh -->
-        <main :class="isOpenn ? 'md:ml-60' : 'md:ml-20 ' + 'transition-all duration-500'" class="relative md:ml-60 pt-24 py-5 px-5 md:px-8 pb-20 space-y-3">
-            <div class="grid grid-cols-1 lg:grid-cols-2">
+        <main :class="isOpenn ? 'md:ml-60' : 'md:ml-20 ' + 'transition-all duration-500'" class="relative md:ml-60 pt-24 py-5 px-5 md:px-8 pb-20 space-y-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-5 pt-5">
+                <div class="space-y-2">
 
-                <!-- Input -->
-                <div class="grid gap-2">
-                    <label x-data="{ preview : false }" class="grid gap-1">
-                        <div class="relative peer order-2 flex justify-between items-center">
-                            <input :type="preview ? 'text' : 'password'" placeholder="Kata sandi lama" required autocomplete="off" class="peer order-2 transition-colors duration-500 w-full text-[10px] md:text-xs text-[#ABABAB] focus:text-black font-normal placeholder:text-[10px] md:placeholder:text-xs focus:placeholder:text-black placeholder:font-normal bg-white px-5 py-1.5 md:py-2 border-[1.5px] border-[#DBDBDB] focus:border-black rounded-md focus:outline-none focus:ring-0"/>
-                            <button type="button" @click="preview = !preview" class="absolute right-5">
-                                <img src="/svgs/eye.svg" x-show="!preview" class="w-4 md:w-5">
-                                <img src="/svgs/eyee.svg" x-show="preview" class="w-4 md:w-5">
-                            </button>
-                        </div>
-                        <h1 class="order-1 mx-1 text-xs md:text-sm text-black font-medium">Kata sandi lama <span class="text-[#FF4E4E] font-medium">*</span></h1>
+                    <!-- Input -->
+                    <label class="grid gap-1">
+                        <input type="text" inputmode="" placeholder="Jam masuk" required autocomplete="off" class="peer order-2 transition-colors duration-500 w-full text-[10px] md:text-xs text-[#ABABAB] focus:text-black font-normal placeholder:text-[10px] md:placeholder:text-xs focus:placeholder:text-black placeholder:font-normal bg-white px-5 py-1.5 md:py-2 border-[1.5px] border-[#DBDBDB] focus:border-black rounded-md focus:outline-none focus:ring-0"/>
+                        <h1 class="order-1 mx-1 text-xs md:text-sm text-black font-medium">Jam masuk <span class="text-[#FF0000] font-medium">*</span></h1>
                     </label>
-                    <label x-data="{ preview : false }" class="grid gap-1">
-                        <div class="relative peer order-2 flex justify-between items-center">
-                            <input :type="preview ? 'text' : 'password'" placeholder="Kata sandi baru" required autocomplete="off" class="peer order-2 transition-colors duration-500 w-full text-[10px] md:text-xs text-[#ABABAB] focus:text-black font-normal placeholder:text-[10px] md:placeholder:text-xs focus:placeholder:text-black placeholder:font-normal bg-white px-5 py-1.5 md:py-2 border-[1.5px] border-[#DBDBDB] focus:border-black rounded-md focus:outline-none focus:ring-0"/>
-                            <button type="button" @click="preview = !preview" class="absolute right-5">
-                                <img src="/svgs/eye.svg" x-show="!preview" class="w-4 md:w-5">
-                                <img src="/svgs/eyee.svg" x-show="preview" class="w-4 md:w-5">
-                            </button>
-                        </div>
-                        <h1 class="order-1 mx-1 text-xs md:text-sm text-black font-medium">Kata sandi baru <span class="text-[#FF4E4E] font-medium">*</span></h1>
+                    <label class="grid gap-1">
+                        <input type="text" inputmode="" placeholder="Jam keluar" required autocomplete="off" class="peer order-2 transition-colors duration-500 w-full text-[10px] md:text-xs text-[#ABABAB] focus:text-black font-normal placeholder:text-[10px] md:placeholder:text-xs focus:placeholder:text-black placeholder:font-normal bg-white px-5 py-1.5 md:py-2 border-[1.5px] border-[#DBDBDB] focus:border-black rounded-md focus:outline-none focus:ring-0"/>
+                        <h1 class="order-1 mx-1 text-xs md:text-sm text-black font-medium">Jam keluar <span class="text-[#FF0000] font-medium">*</span></h1>
                     </label>
-                    <label x-data="{ preview : false }" class="grid gap-1">
-                        <div class="relative peer order-2 flex justify-between items-center">
-                            <input :type="preview ? 'text' : 'password'" placeholder="konfirmasi kata sandi baru" required autocomplete="off" class="peer order-2 transition-colors duration-500 w-full text-[10px] md:text-xs text-[#ABABAB] focus:text-black font-normal placeholder:text-[10px] md:placeholder:text-xs focus:placeholder:text-black placeholder:font-normal bg-white px-5 py-1.5 md:py-2 border-[1.5px] border-[#DBDBDB] focus:border-black rounded-md focus:outline-none focus:ring-0"/>
-                            <button type="button" @click="preview = !preview" class="absolute right-5">
-                                <img src="/svgs/eye.svg" x-show="!preview" class="w-4 md:w-5">
-                                <img src="/svgs/eyee.svg" x-show="preview" class="w-4 md:w-5">
-                            </button>
-                        </div>
-                        <h1 class="order-1 mx-1 text-xs md:text-sm text-black font-medium">konfirmasi kata sandi baru <span class="text-[#FF4E4E] font-medium">*</span></h1>
+                    <label x-data="{ chars : 0 }" class="grid gap-1">
+                        <textarea @keyup="chars = 0 + $refs.username.value.length" x-ref="username" maxlength="300" rows="4" required autocomplete="off" class="peer order-2 resize-none transition-colors duration-500 w-full text-[10px] md:text-xs text-[#ABABAB] focus:text-black font-normal placeholder:text-[10px] md:placeholder:text-xs focus:placeholder:text-black placeholder:font-normal bg-white px-5 py-1.5 md:py-2 border-[1.5px] border-[#DBDBDB] focus:border-black rounded-md focus:outline-none focus:ring-0 scrollbar-y"/></textarea>
+                        <h1 class="order-1 mx-1 text-xs md:text-sm text-black font-medium">Deskripsi <span class="text-[#FF0000] font-medium">*</span></h1>
+                        <h1 x-text="chars + ' /300'" class="order-3 mx-1 text-[10px] md:text-xs text-gray-500 font-medium capitalize"></h1>
                     </label>
+                </div>
+                <div x-data="fileUpload" class="space-y-2">
                     
-                    <!-- Aksi -->
-                    <div class="flex items-center gap-3 mt-3">
-                        <button class="bg-[#4E5CFF] py-2 px-[30px] rounded-md shadow-md shadow-black/20">
-                            <h1 class="text-white text-[10px] md:text-xs font-semibold">Simpan</h1>
-                        </button>
-                        <button class="bg-[#FE144F] py-2 px-[30px] rounded-md shadow-md shadow-black/20">
-                            <h1 class="text-white text-[10px] md:text-xs font-semibold">Batal</h1>
-                        </button>
+                    <!-- Unggah gambar -->
+                    <label class="grid gap-1">
+                        <h1 class="mx-1 text-xs md:text-sm text-black font-medium">Unggah gambar</h1>
+                        <div class="flex justify-center items-center bg-white p-5 border-[1.5px] border-[#DBDBDB] rounded-lg cursor-pointer">
+                            <img src="/imgs/unggah.jpg" class="w-28 h-28 object-cover bg-cover rounded-xl">
+                        </div>
+                        <input type="file" multiple @change="previewImages" class="hidden" accept="image/jpeg, image/png, image/webp"/>
+                        <h1 class="mx-1 text-[10px] md:text-xs text-[#FF0000] font-normal">format .jpg, .png, .webp</h1>
+                    </label>
+                
+                    <!-- Pratinjau Gambar -->
+                    <div class="grid grid-cols-5 gap-2 md:gap-3">
+                        <template x-for="(image, index) in images" :key="index">
+                            <div class="relative">
+                                <img :src="image.url" class="w-full h-14 md:h-20 object-cover rounded-xl">
+                                <div @click="removeImage(index)" class="absolute inset-0 flex justify-center items-center bg-black/30 rounded-xl cursor-pointer">
+                                    <img src="/svgs/trash.svg" class="w-5 md:w-6">
+                                </div>
+                            </div>
+                        </template>
                     </div>
                 </div>
+            </div>
+
+            <!-- Aksi -->
+            <div class="flex items-center gap-3">
+                <button class="bg-[#4E5CFF] py-2 px-[30px] rounded-md shadow-md shadow-black/20">
+                    <h1 class="text-white text-[10px] md:text-xs font-semibold">Simpan</h1>
+                </button>
+                <button class="bg-[#FE144F] py-2 px-[30px] rounded-md shadow-md shadow-black/20">
+                    <h1 class="text-white text-[10px] md:text-xs font-semibold">Batal</h1>
+                </button>
             </div>
         </main>
 
@@ -204,7 +211,7 @@
             <div class="w-[80%] sm:w-[50%] md:w-[35%] bg-white py-8 px-5 rounded-lg md:rounded-xl space-y-4">
                 <div class="text-center space-y-3">
                     <h1 class="text-black text-lg md:text-xl font-bold">Notification</h1>
-                    <p class="text-black text-sm md:text-base font-normal">Kata sandi berhasil diubah</p>
+                    <p class="text-black text-sm md:text-base font-normal">Data profile berhasil diubah</p>
                 </div>
                 <div @click="modal = false" class="w-fit bg-[#4E5CFF] py-1.5 px-6 rounded mx-auto cursor-pointer">
                     <h1 class="text-xs md:text-sm text-white font-medium capitalize">Kembali</h1>
@@ -212,5 +219,7 @@
             </div>
         </div>
     </div>
+
+    <script src="/js/upload.js"></script>
 </body>
 </html>
