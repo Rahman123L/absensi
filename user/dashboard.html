@@ -16,7 +16,7 @@
         theme: {
             extend: {
                 colors: {
-                    primary: '',
+                    primary: '#4E5CFF',
                     secondary: '',
                     tertiary: '',
                 },
@@ -92,7 +92,7 @@
         x-transition:leave="transform transition-transform duration-300"
         x-transition:leave-start="translate-x-0" 
         x-transition:leave-end="-translate-x-full"
-        class="hidden fixed top-0 left-0 z-50 w-60 bg-[#4E5CFF] h-screen"
+        class="hidden fixed top-0 left-0 z-50 w-60 bg-primary h-screen"
         :class="{ 'block': isOpen, 'hidden': !isOpen, 'w-60': isOpenn, 'w-20 transition-all duration-500': !isOpenn,}"
         >
             <!-- Logo -->
@@ -111,10 +111,10 @@
                     <img src="/svgs/top.svg" class="absolute -top-6 right-0 invisible group-hover:visible">
                     <button class="w-full flex items-center gap-2 md:gap-3 pl-5">
                         <div class="flex items-center gap-2 md:gap-3 w-full py-3 px-4 bg-transparent group-hover:bg-[#F4F5FF] group-focus:bg-[#F4F5FF] rounded-s-2xl">
-                            <svg class="w-4 fill-[#F4F5FF] transition-colors duration-300 group-hover:fill-[#4E5CFF] group-focus:fill-[#4E5CFF]" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-4 fill-[#F4F5FF] transition-colors duration-300 group-hover:fill-primary group-focus:fill-primary" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.83 6.51002L13.28 1.27002C12 0.250018 9.99996 0.240018 8.72996 1.26002L2.17996 6.51002C1.23996 7.26002 0.669963 8.76002 0.869963 9.94002L2.12996 17.48C2.41996 19.17 3.98996 20.5 5.69996 20.5H16.3C17.99 20.5 19.59 19.14 19.88 17.47L21.14 9.93002C21.32 8.76002 20.75 7.26002 19.83 6.51002ZM11.75 16.5C11.75 16.91 11.41 17.25 11 17.25C10.59 17.25 10.25 16.91 10.25 16.5V13.5C10.25 13.09 10.59 12.75 11 12.75C11.41 12.75 11.75 13.09 11.75 13.5V16.5Z"/>
                             </svg>
-                            <h1 :class="isOpenn ? 'block' : 'hidden'" class="text-xs md:text-sm text-white font-normal transition-colors duration-300 group-hover:text-[#4E5CFF] group-focus:text-[#4E5CFF]">Dashboard</h1>
+                            <h1 :class="isOpenn ? 'block' : 'hidden'" class="text-xs md:text-sm text-white font-normal transition-colors duration-300 group-hover:text-primary group-focus:text-primary">Dashboard</h1>
                         </div>
                     </button>
                     <img src="/svgs/bottom.svg" class="absolute -bottom-6 right-0 invisible group-hover:visible">
@@ -124,14 +124,14 @@
                     <img src="/svgs/top.svg" class="absolute -top-6 right-0 invisible group-hover:visible">
                     <button class="w-full flex items-center gap-2 md:gap-3 pl-5">
                         <div class="flex items-center gap-2 md:gap-3 w-full py-3 px-4 bg-transparent group-hover:bg-[#F4F5FF] group-focus:bg-[#F4F5FF] rounded-s-2xl">
-                            <svg class="w-4 stroke-[#F4F5FF] stroke-[2] transition-colors duration-300 group-hover:stroke-[#4E5CFF] group-focus:stroke-[#4E5CFF]" fill="none" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-4 stroke-[#F4F5FF] stroke-[2] transition-colors duration-300 group-hover:stroke-primary group-focus:stroke-primary" fill="none" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.55957 18.5V13.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 16H7" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M8 2.5V5.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M16 2.5V5.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M15.8098 3.91992C19.1498 4.03992 20.8398 5.26992 20.9398 9.96992L21.0698 16.1399C21.1498 20.2599 20.1998 22.3299 15.1998 22.4399L9.19983 22.5599C4.19983 22.6599 3.15983 20.6199 3.07983 16.5099L2.93983 10.3299C2.83983 5.62992 4.48983 4.32992 7.80983 4.07992L15.8098 3.91992Z" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <h1 :class="isOpenn ? 'block' : 'hidden'" class="text-xs md:text-sm text-white font-normal transition-colors duration-300 group-hover:text-[#4E5CFF] group-focus:text-[#4E5CFF]">Kegiatan</h1>
+                            <h1 :class="isOpenn ? 'block' : 'hidden'" class="text-xs md:text-sm text-white font-normal transition-colors duration-300 group-hover:text-primary group-focus:text-primary">Kegiatan</h1>
                         </div>
                     </button>
                     <img src="/svgs/bottom.svg" class="absolute -bottom-6 right-0 invisible group-hover:visible">
@@ -221,13 +221,13 @@
                 <!-- Pembungkus -->
                 <div class="hidden md:block relative pr-5 md:pr-0">
                     <div class="absolute top-4 -left-2 md:left-0 flex flex-col justify-center items-center gap-[45px] md:gap-[33px]">
-                        <div class="w-fit bg-[#4E5CFF] px-[6px] py-[7px] rounded-full">
+                        <div class="w-fit bg-primary px-[6px] py-[7px] rounded-full">
                             <svg class="w-2 stroke-white stroke-[1.5]" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.75 3.16992L2.75 5.16992L6.75707 1.16992"stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
 
-                        <div class="w-16 md:w-14 border-[1.5px] border-[#4E5CFF] rotate-90"></div>
+                        <div class="w-16 md:w-14 border-[1.5px] border-primary rotate-90"></div>
                         <div class="w-fit bg-[#E6E6E6] px-[6px] py-[7px] rounded-full">
                             <svg class="w-2 stroke-[#C4C4C4] stroke-[1.5]" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.75 3.16992L2.75 5.16992L6.75707 1.16992"stroke-linecap="round" stroke-linejoin="round"/>
@@ -316,7 +316,7 @@
             </div>
 
             <!-- Absen -->
-            <button class="w-full md:w-[60%] lg:w-[30%] bg-[#4E5CFF] py-2 px-4 rounded-lg">
+            <button class="w-full md:w-[60%] lg:w-[30%] bg-primary py-2 px-4 rounded-lg">
                 <h1 class="text-white text-xs md:text-sm font-normal">Absen</h1>
             </button>
 
@@ -485,7 +485,7 @@
                     <p class="text-black text-sm md:text-base font-normal">Absensi berhasil dilakukan</p>
                     <p class="text-black text-sm md:text-base font-normal">Absensi sudah dilakukan</p>
                 </div>
-                <div @click="modal = false" class="w-fit bg-[#4E5CFF] py-1.5 px-6 rounded mx-auto cursor-pointer">
+                <div @click="modal = false" class="w-fit bg-primary py-1.5 px-6 rounded mx-auto cursor-pointer">
                     <h1 class="text-xs md:text-sm text-white font-medium capitalize">Kembali</h1>
                 </div>
             </div>
